@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    /* xm */
+    @media (max-width: 475px) {
+    body{
+        width: 100%;
+        overflow-y:hidden;
+        overflow-x: hidden;
+    }
+    .hour , .fullminute, .fullsecond, .minute ,.second{
+        font-size: 1.5rem;
+        font-weight:bold;
+        font-family:  "Orbitron",sans-serif;
+    }
+    .currentDate{
+        font-size: 0.4rem;
+    }
+    .maindiv{
+        border-radius: 0.5rem;
+    }
+
+}
+    /* xm */
+
+@media (min-width: 475px) {
+    body{
+        width: 100%;
+        overflow-y:hidden;
+        overflow-x: hidden;
+    }
+    .hour , .fullminute, .fullsecond, .minute ,.second{
+        font-size: 1.5rem;
+        font-weight:bold;
+        font-family:  "Orbitron",sans-serif;
+    }
+    .currentDate{
+        font-size: 0.4rem;
+    }
+    .maindiv{
+        border-radius: 0.5rem;
+    }
+
+}
+
+/*sm */
+@media (min-width: 640px) {
+
+    body{
+        width: 100%;
+        overflow-y:hidden;
+        overflow-x: hidden;
+    }
+    .hour , .fullminute, .fullsecond, .minute ,.second{
+        font-size: 1.7rem;
+        font-weight:bold;
+        font-family:  "Orbitron",sans-serif;
+    }
+    .currentDate{
+        font-size: 0.5rem;
+    }
+    .maindiv{
+        border-radius: 0.5rem;
+        
+    }
+
+}
+
+/* md */
+@media (min-width: 768px) {
+    
+    body{
+        width: 100%;
+        overflow-y:hidden;
+        overflow-x: hidden;
+    }
+    .hour , .fullminute, .fullsecond, .minute ,.second{
+        font-size: 2rem;
+        font-weight:bold;
+        font-family:  "Orbitron",sans-serif;
+    }
+    .currentDate{
+        font-size: 0.6rem;
+    }
+    .maindiv{
+        border-radius: 0.6rem;
+    }
+
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    body{
+        width: 100%;
+        overflow-y:hidden;
+        overflow-x: hidden;
+    }
+    .hour , .fullminute, .fullsecond, .minute ,.second{
+        font-size: 10rem;
+        font-weight:bold;
+        font-family:  "Orbitron",sans-serif;
+    }
+    .currentDate{
+        font-size: 2rem;
+    }
+    .maindiv{
+        border-radius: 0.8rem;
+    }
+
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    body{
+        width: 100%;
+        overflow-y:hidden;
+        overflow-x: hidden;
+    }
+    .hour , .fullminute, .fullsecond, .minute ,.second{
+        font-size: 15rem;
+        font-weight:bold;
+        font-family:  "Orbitron",sans-serif;
+    }
+    .currentDate{
+        font-size: 1.7rem;
+    }
+    .maindiv{
+        border-radius: 1rem;
+    }
+
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    body{
+        width: 100%;
+        overflow-y:hidden;
+        overflow-x: hidden;
+    }
+    .hour , .fullminute, .fullsecond, .minute ,.second{
+        font-size: 10rem;
+        font-weight:bold;
+        font-family:  "Orbitron",sans-serif;
+    }
+    .currentDate{
+        font-size: 1.7rem;
+    }
+    .maindiv{
+        border-radius: 1.2rem;
+    }
+}
+
+
+
+
+</style>
+    <title>Digital Clock</title>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="maindiv2">
+            <p id="currentDate" class="currentDate"></p>
+        </div>
+       <div class="maindiv2">
+        <div class="hour" id="hour">30</div>
+        <p class="fullminute">:<div class="minute" id="minute">30</div></p>
+        <p class="fullsecond">:<div class="second" id="second">45</div></p>
+       </div>
+    </div>
+
+
+   <script src="./script.js"></script>
+</body>
+</html>
